@@ -1,0 +1,154 @@
+/* Global */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    transition: all 0.3s ease-in-out;
+    --black: #38322d;
+    --blue: #e3fffe;
+    --yellow: #f6ffba;
+    --pink: #ffeaf9;
+    font-family: 'pennypacker', Helvetica, sans-serif;
+    font-size: 14px;
+    letter-spacing: 0.5px;
+    color: var(--yellow);
+}
+
+body {
+    background-color:  var(--yellow);
+}
+
+h1 {
+    font-family: 'pennypacker-semiwide', Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    letter-spacing: 2px;
+}
+
+/* Header */
+
+header {
+    position: absolute;
+    width: 100%;
+    background-color: var(--black);
+}
+
+.page-title {
+    width: calc(100% - 50px);
+    padding: 10px 0 30px;
+    margin: 0 25px;
+    border-bottom: 2px dotted var(--yellow);
+}
+
+
+/* Nav */
+
+#nav-container {
+    display: flex;
+    flex-flow: wrap;
+    width: 100%;
+}
+
+.nav-column {
+    padding: 20px 25px;
+    width: 100%;
+}
+
+.nav-item {
+    text-align: left;
+    margin-bottom: 10px;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* Sub menu */
+
+h2 {
+    font-size: 18px;
+    font-family: 'pennypacker-semiwide', Helvetica, sans-serif;
+}
+
+.hidden {
+    display: none;
+}
+
+
+/* Buttons */
+
+button {
+    border: none;
+    border-radius: 0;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.button-icon-box {
+    width: 0;
+    overflow: hidden;
+    display: inline-block;
+    vertical-align: text-bottom;
+}
+
+button:hover .button-icon-box {
+    width: 20px;
+}
+
+.active {
+    width: 20px;
+}
+
+/* The fun bit */
+
+body {
+    animation: slowfade 30s ease infinite;
+}
+
+* {
+    animation: slowfade-text-border 30s ease infinite;
+}
+
+@keyframes slowfade {
+    0% {
+        background-color: var(--yellow);
+    }
+
+    33% {
+        background-color: var(--blue);
+    }
+
+    66% {
+        background-color: var(--pink);
+    }
+
+    100% {
+        background-color: var(--yellow);
+    }
+
+}
+
+@keyframes slowfade-text-border{
+    0% {
+        color: var(--yellow);
+        border-color: var(--yellow);
+    }
+
+    33% {
+        color: var(--blue);
+        border-color: var(--blue);
+    }
+
+    66% {
+        color: var(--pink);
+        border-color: var(--pink);
+    }
+
+    100% {
+        color: var(--yellow);
+        border-color: var(--yellow);
+    }
+
+}
+

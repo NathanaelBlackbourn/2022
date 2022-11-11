@@ -1,0 +1,9 @@
+@media all and (min-width: 769px) {
+
+    /* Nav */
+
+    .nav-column {
+        width: 33.333%;
+    }
+
+}
