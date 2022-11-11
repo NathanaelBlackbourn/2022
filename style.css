@@ -102,13 +102,13 @@ button:hover .button-icon-box {
 
 /* The fun bit */
 
-body {
+/* body {
     animation: slowfade 30s ease infinite;
 }
 
 * {
     animation: slowfade-text-border 30s ease infinite;
-}
+} */
 
 @keyframes slowfade {
     0% {
