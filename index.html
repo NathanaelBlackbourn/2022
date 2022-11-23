@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="style.tablet.css">
     <link rel="stylesheet" href="style.desktop.css">
+    <script src="main.js"></script>
     <title>Sublime Systems</title>
 </head>
 <body>
@@ -36,8 +37,6 @@
                 <div class="nav-item">
                     <p>My name is Nathanael Blackbourn, I am a front end developer based in Gothenburg. I use this space as a sandbox for personal projects and to display work done on my course at Medieinstitutet finishing May 2024. I gave it the name Sublime Systems as a guide to remind me to aim for the sublime in my work. Please have a look around.</p>
                 </div>
-            </div>
-            <div class="nav-column">
                 <div class="nav-item" id="go">
                     <button>
                         <span class="button-icon-box">
@@ -58,21 +57,74 @@
                     <button id="about-me-button"><span class="button-icon-box">></span>about me</button>
                 </div>
             </div>
-            <div class="nav-column">
-                <nav class="sub-menu hidden" id="project-list">
+            <div class="nav-column hidden"  id="project-list">
+                <nav class="sub-menu hidden">
                     <div class="menu-item">
                         <h2 class="menu-item-title">project title here</h2>
                         <p class="menu-item-description"></p>
                     </div>
                 </nav>
-                <nav class="nav-item sub-menu hidden" id="work-list">
-
+            </div>
+            <div class="nav-column hidden"  id="work-list">
+                <nav class="sub-menu hidden">
+                    <div class="nav-item">
+                        <h1 class="menu-item-title">project title here</h1>
+                        <p class="menu-item-description"></p>
+                    </div>
                 </nav>
+            </div>
+            <div class="nav-column" id="cv-col-1">
+                <div class="nav-item">
+                    <p>
+                        British national. I have lived in Sweden for two years now.<br><br>
+                        My interest in frontend development started ten years ago during my degree. Since then I have done various courses and projects and have now decided to make it my career.<br><br>
+                        Front end clicks with me. I like the structure, creativity, the visual involvement. I like to work with the computer, I like to build things, I like the culture of the international developer community, I like that our reach as developers extends as far as our imagination.<br><br>
+                        The office environment will be new for me but I have been in many new environments over the past few years and if there is one thing I have proven it is my ability to adapt and learn.</p>
+                </div>
+                <div class="line"></div>
+                <div class="nav-item">
+                    <button>
+                        <span class="button-icon-box">
+                            >
+                        </span>
+                        <h2>EDUCATION</h2>
+                    </button>
+                </div>
+                <div class="nav-item">
+                    <button>
+                        <span class="button-icon-box">
+                            >
+                        </span>
+                        <h2>EXPERIENCE</h2>
+                    </button>
+                </div>
+            </div>
+            <div class="nav-column" id="photo-col">
+                <div class="nav-item">
+                    <div id="photo-width">
+                        <div id="photo"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="nav-column hidden" id="education-col">
+                <div class="time-period">
+                    <h2>SEPT '22</h2>
+                    <p>-----</p>
+                    <h2>NOW</h2>
+                    <h2>Front End Developer</h2>
+                    <h2>Medieinstitutet</h2>
+                </div>
+            </div>
+            <div class="nav-column hidden" id="experience-col">
+                <div class="time-period">
+                    <h2>SEPT '22</h2>
+                    <p>-----</p>
+                    <h2>NOW</h2>
+                </div>
             </div>
         </div>
     </header>
     <main>
     </main>
-    <script src="main.js"></script>
 </body>
 </html>
