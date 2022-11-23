@@ -4,19 +4,19 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    transition: all 0.3s ease-in-out;
     --black: #38322d;
     --blue: #e3fffe;
     --yellow: #f6ffba;
     --pink: #ffeaf9;
     font-family: 'pennypacker', Helvetica, sans-serif;
     font-size: 14px;
+    line-height: 1.5rem;
     letter-spacing: 0.5px;
-    color: var(--yellow);
+    color: var(--blue);
 }
 
 body {
-    background-color:  var(--yellow);
+    background-color:  var(--blue);
 }
 
 h1 {
@@ -26,33 +26,22 @@ h1 {
     letter-spacing: 2px;
 }
 
-/* Header */
-
-header {
-    position: absolute;
-    width: 100%;
-    background-color: var(--black);
+a {
+    text-decoration: none;
 }
 
-.page-title {
-    width: calc(100% - 50px);
-    padding: 10px 0 30px;
-    margin: 0 25px;
-    border-bottom: 2px dotted var(--yellow);
-}
+/* Nav elements structure */
 
-
-/* Nav */
-
-#nav-container {
+.nav-container {
     display: flex;
     flex-flow: wrap;
-    width: 100%;
+    width: calc(100% - 50px);
+    margin: 0 25px;
 }
 
 .nav-column {
-    padding: 20px 25px;
-    width: 100%;
+    padding: 20px 0;
+    width: calc((100% - 110px) / 3);
 }
 
 .nav-item {
@@ -60,8 +49,17 @@ header {
     margin-bottom: 10px;
 }
 
-a {
-    text-decoration: none;
+/* Page title */
+
+header {
+    position: absolute;
+    width: 100%;
+    background-color: var(--black);
+}
+
+#title-block {
+    justify-content: space-between;
+    border-bottom: 2px dotted var(--blue);
 }
 
 /* Sub menu */
@@ -69,10 +67,6 @@ a {
 h2 {
     font-size: 18px;
     font-family: 'pennypacker-semiwide', Helvetica, sans-serif;
-}
-
-.hidden {
-    display: none;
 }
 
 
@@ -90,6 +84,7 @@ button {
     overflow: hidden;
     display: inline-block;
     vertical-align: text-bottom;
+    transition: width 300ms ease;
 }
 
 button:hover .button-icon-box {
@@ -99,6 +94,14 @@ button:hover .button-icon-box {
 .active {
     width: 20px;
 }
+
+
+/* Interactivity */
+
+.hidden {
+    display: none;
+}
+
 
 /* The fun bit */
 
@@ -112,7 +115,7 @@ button:hover .button-icon-box {
 
 @keyframes slowfade {
     0% {
-        background-color: var(--yellow);
+        background-color: var(--blue);
     }
 
     33% {
@@ -124,15 +127,15 @@ button:hover .button-icon-box {
     }
 
     100% {
-        background-color: var(--yellow);
+        background-color: var(--blue);
     }
 
 }
 
 @keyframes slowfade-text-border{
     0% {
-        color: var(--yellow);
-        border-color: var(--yellow);
+        color: var(--blue);
+        border-color: var(--blue);
     }
 
     33% {
@@ -146,8 +149,8 @@ button:hover .button-icon-box {
     }
 
     100% {
-        color: var(--yellow);
-        border-color: var(--yellow);
+        color: var(--blue);
+        border-color: var(--blue);
     }
 
 }

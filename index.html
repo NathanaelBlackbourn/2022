@@ -12,14 +12,28 @@
 </head>
 <body>
     <header>
-        <div class="page-title">
-            <h1 class="header-h1">SUBLIME SYSTEMS</h1>   
-        </div>
-        <div id="nav-container">
+        <div class="nav-container" id="title-block">
             <div class="nav-column">
-                <div id="welcome">
+                <h1 class="header-h1">SUBLIME SYSTEMS</h1>   
+            </div>
+            <div class="nav-column" id="contact">
+                <div class="nav-item">
+                    <p>nathanaelblackbourn@gmail.com</p>
+                </div>
+                <div class="nav-item">
+                    <button><span class="button-icon-box">></span><a href="https://github.com/NathanaelBlackbourn">github</a></button>
+                </div>
+                <div class="nav-item">
+                    <button><span class="button-icon-box">></span><a href="https://www.linkedin.com/in/nathanael-blackbourn-18a4811bb/">linkedin</a></button>
+                </div>
+            </div>
+        </div>
+        <div class="nav-container">
+            <div class="nav-column" id="welcome">
+                <div class="nav-item">
                     <p>My name is Nathanael Blackbourn, I am a front end developer based in Gothenburg. I use this space as a sandbox for personal projects and to display work done on my course at Medieinstitutet finishing May 2024. I gave it the name Sublime Systems as a guide to remind me to aim for the sublime in my work. Please have a look around.</p>
-                    <br><br>
+                </div>
+                <div class="nav-item">
                     <button id="go">
                         <span class="button-icon-box">
                             >
@@ -27,19 +41,17 @@
                         continue
                     </button>
                 </div>
-                <nav class="hidden" id="nav-main">
-                    <div class="nav-item">
-                        <button id="projects-button"><span class="button-icon-box">></span>projects</button>
-                    </div>
-                    <br>
-                    <div class="nav-item">
-                        <button id="work-button"><span class="button-icon-box">></span>work</button>
-                    </div>
-                    <br>
-                    <div class="nav-item">
-                        <button id="about-me-button"><span class="button-icon-box">></span>about me</button>
-                    </div>
-                </nav>
+            </div>
+            <div class="nav-column hidden" id="nav-main">
+                <div class="nav-item">
+                    <button id="projects-button"><span class="button-icon-box">></span>projects</button>
+                </div>
+                <div class="nav-item">
+                    <button id="work-button"><span class="button-icon-box">></span>work</button>
+                </div>
+                <div class="nav-item">
+                    <button id="about-me-button"><span class="button-icon-box">></span>about me</button>
+                </div>
             </div>
             <div class="nav-column">
                 <nav class="sub-menu hidden" id="project-list">
@@ -51,15 +63,6 @@
                 <nav class="nav-item sub-menu hidden" id="work-menu">
 
                 </nav>
-            </div>
-            <div class="nav-column">
-                <div id="contact">
-                    <p>nathanaelblackbourn@gmail.com</p>
-                    <br>
-                    <button><span class="button-icon-box">></span><a href="https://github.com/NathanaelBlackbourn">github</a></button>
-                    <br><br>
-                    <button><span class="button-icon-box">></span><a href="https://www.linkedin.com/in/nathanael-blackbourn-18a4811bb/">linkedin</a></button>
-                </div>
             </div>
         </div>
     </header>
