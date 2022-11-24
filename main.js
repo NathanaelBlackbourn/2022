@@ -17,7 +17,7 @@ function getNavElements() {
     navElements.welcome = document.getElementById('welcome');
     navElements.main = document.getElementById('nav-main');
     navElements.aboutCol = document.getElementById('about-col');
-    navElements.photoCol = document.getElementById('photo-col');
+    navElements.CVCol = document.getElementById('cv-col');
     // Buttons that toggle columns
     navElements.goButton = document.getElementById('go');
     navElements.aboutButton = document.getElementById('about-me-button');
@@ -43,7 +43,7 @@ function welcomeListener() {
 /** Adds event listener to about me button */
 function aboutListener () {
     navElements.aboutButton.addEventListener('click', () => {
-        toggleElements(navElements.aboutCol, navElements.photoCol);
+        toggleElements(navElements.aboutCol, navElements.CVCol);
         navElements.header.classList.toggle('expanded');
     })
 }

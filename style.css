@@ -27,7 +27,7 @@ h1 {
 }
 
 h2 {
-    font-size: 1rem;
+    font-size: 0.9rem;
     font-family: 'pennypacker-semiwide', Helvetica, sans-serif;
 }
 
@@ -40,9 +40,10 @@ a {
 
 header {
     position: absolute;
-    padding: 0 30px;
+    padding: 0 3rem;
     width: 100%;
     background-color: var(--black);
+    overflow: hidden;
 }
 
 .nav-container {
@@ -73,14 +74,14 @@ header {
 /* Buttons */
 
 button {
+    display: block;
+    margin-bottom: 0.5rem;
     border: none;
     border-radius: 0;
+    font-size: 0.9rem;
+    font-family: 'pennypacker-semiwide', Helvetica, sans-serif;
     background-color: transparent;
     cursor: pointer;
-}
-
-button h2 {
-    display: inline-block;
 }
 
 .button-icon-box {
@@ -112,6 +113,10 @@ button:hover .button-icon-box {
 
 /* CV */
 
+#cv-col {
+    overflow: scroll;
+}
+
 #photo-width {
     width: 100%;
     max-width: 300px;
@@ -125,10 +130,23 @@ button:hover .button-icon-box {
     background-size: cover;
 }
 
+.cv-block {
+    margin-top: 5rem;
+}
+
 .time-period {
     display: flex;
     justify-content: space-between;
     margin: 1rem 0 0.5rem 0;
+}
+
+.year {
+    font-size: 1.5rem;
+    font-family: 'pennypacker-semiwide', Helvetica, sans-serif;
+}
+
+.cv-block P {
+    margin-top: 1rem;
 }
 
 
