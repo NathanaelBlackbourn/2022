@@ -17,7 +17,8 @@
 
 body {
     height: 100vh;
-    background-color:  var(--blue);
+    background-color: var(--blue);
+    overflow: hidden;
 }
 
 h1 {
@@ -44,20 +45,17 @@ header {
     padding: 0 3rem;
     width: 100%;
     background-color: var(--black);
+    overflow: scroll;
 }
 
 .nav-container {
     display: flex;
-    justify-content: space-between;
+    justify-content: right;
     flex-flow: wrap;
     margin: 0 -2.5rem;
 }
 
 .nav-column {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    position: relative;
     padding: 1rem 2.5rem;
 }
 
@@ -119,10 +117,6 @@ button:hover .button-icon-box {
 }
 
 /* CV */
-
-#cv-col {
-    overflow: scroll;
-}
 
 #photo-background {
     border: 1rem solid var(--blue);
@@ -197,11 +191,7 @@ button:hover .button-icon-box {
 /* Interactivity */
 
 .hidden {
-    display: none;
-}
-
-.expanded {
-    height: 100vh;
+    display: none !important;
 }
 
 /* The fun bit */

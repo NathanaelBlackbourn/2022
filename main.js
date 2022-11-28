@@ -44,11 +44,9 @@ function getNavElements() {
  * Checks arguments for class hidden, removes when found.
  * @param  {...HTMLElement} elements Column elements to be shown.
  */
-function toggleOn(...elements) {
+function toggleElements(...elements) {
     elements.forEach(e => {
-        if (e.classList.contains('hidden')) {
-            e.classList.toggle('hidden');
-        }
+        e.classList.toggle('hidden');
     })
 }
 
@@ -67,7 +65,7 @@ function toggleOff(...elements) {
 /** Adds event listener to welcome block. */
 function welcomeListener() {
     navElements.goButton.addEventListener("click", () => {
-        toggleOn(navElements.main);
+        toggleElements(navElements.main);
         toggleOff(navElements.welcome);
     });
 }
@@ -75,7 +73,7 @@ function welcomeListener() {
 /** Adds event listener to work button */
 function workListener() {
     navElements.workButton.addEventListener('click', () => {
-        toggleOn(navElements.workCol);
+        toggleElements(navElements.workCol);
         toggleOff(navElements.projectsCol, navElements.aboutCol, navElements.CVCol);
     })
 }
@@ -83,7 +81,7 @@ function workListener() {
 /** Adds event listener to projects button */
 function projectsListener() {
     navElements.projectsButton.addEventListener('click', () => {
-        toggleOn(navElements.projectsCol);
+        toggleElements(navElements.projectsCol);
         toggleOff(navElements.workCol, navElements.aboutCol, navElements.CVCol);
     })
 }
@@ -91,9 +89,8 @@ function projectsListener() {
 /** Adds event listener to about me button */
 function aboutListener () {
     navElements.aboutButton.addEventListener('click', () => {
-        toggleOn(navElements.aboutCol, navElements.CVCol);
+        toggleElements(navElements.aboutCol, navElements.CVCol);
         toggleOff(navElements.workCol, navElements.projectsCol);
-        navElements.header.classList.toggle('expanded');
     })
 }
 

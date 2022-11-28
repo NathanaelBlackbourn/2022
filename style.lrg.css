@@ -5,16 +5,28 @@
     header {
         display: flex;
         flex-direction: column;
+        height: 100%;
+        max-height: 100vh;
     }
 
     #nav-block {
+        height: 100%;
         overflow: hidden;
     }
 
     .nav-column {
-        height: 100%;
-        overflow: hidden;
         width: 33.333%;
+        height: 100%;
+        overflow: scroll;
     }
 
+    .about-col {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .about-text {
+        flex-grow: 1;
+    }
 }
