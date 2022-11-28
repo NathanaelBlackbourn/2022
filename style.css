@@ -165,10 +165,10 @@ button:hover .button-icon-box {
     width: 60%;
 }
 
-.time-period {
+.cv-flex-row {
     display: flex;
     justify-content: space-between;
-    margin: 1rem 0 0.5rem 0;
+    margin: 1rem 0;
 }
 
 .year {
