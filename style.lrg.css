@@ -2,7 +2,18 @@
 
     /* Nav */
 
+    header {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #nav-block {
+        overflow: hidden;
+    }
+
     .nav-column {
+        height: 100%;
+        overflow: hidden;
         width: 33.333%;
     }
 

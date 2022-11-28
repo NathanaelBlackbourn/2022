@@ -16,6 +16,7 @@
 }
 
 body {
+    height: 100vh;
     background-color:  var(--blue);
 }
 
@@ -43,7 +44,6 @@ header {
     padding: 0 3rem;
     width: 100%;
     background-color: var(--black);
-    overflow: hidden;
 }
 
 .nav-container {
@@ -128,6 +128,7 @@ button:hover .button-icon-box {
     background: url(images/blue1.jpg);
     background-position: 50%;
     background-size: cover;
+    background-color: var(--blue);
 }
 
 .cv-block {
@@ -145,7 +146,7 @@ button:hover .button-icon-box {
     font-family: 'pennypacker-semiwide', Helvetica, sans-serif;
 }
 
-.cv-block P {
+.cv-block p {
     margin-top: 1rem;
 }
 
