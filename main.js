@@ -8,6 +8,7 @@ function runNav() {
     getNavElements();
     welcomeListener();
     aboutListener();
+    CVListeners();
 }
 
 /** Gets HTML elements in nav bar after page load and adds to navElements object */
@@ -21,6 +22,16 @@ function getNavElements() {
     // Buttons that toggle columns
     navElements.goButton = document.getElementById('go');
     navElements.aboutButton = document.getElementById('about-me-button');
+    // CV scroll buttons
+    navElements.skillsButton = document.getElementById('skills-button');
+    navElements.educationButton = document.getElementById('education-button');
+    navElements.experienceButton = document.getElementById('experience-button');
+    navElements.languagesButton = document.getElementById('languages-button');
+    // CV scroll button targets
+    navElements.skillsLine = document.getElementById('skills-line');
+    navElements.educationLine = document.getElementById('education-line');
+    navElements.experienceLine = document.getElementById('experience-line');
+    navElements.languagesLine = document.getElementById('languages-line');
 }
 
 /**
@@ -48,3 +59,18 @@ function aboutListener () {
     })
 }
 
+/** CV nav buttons scroll to place */
+function CVListeners() {
+    navElements.skillsButton.addEventListener('click', () => {
+        navElements.skillsLine.scrollIntoView(true);
+    })
+    navElements.educationButton.addEventListener('click', () => {
+        navElements.educationLine.scrollIntoView(true);
+    })
+    navElements.experienceButton.addEventListener('click', () => {
+        navElements.experienceLine.scrollIntoView(true);
+    })
+    navElements.languagesButton.addEventListener('click', () => {
+        navElements.languagesLine.scrollIntoView(true);
+    })
+}
