@@ -54,6 +54,10 @@ header {
 }
 
 .nav-column {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
     padding: 1rem 2.5rem;
 }
 
@@ -62,6 +66,10 @@ header {
     margin-bottom: 1rem;
 }
 
+.nav-menu-block {
+    display: flex;
+    flex-wrap: wrap;
+}
 
 /* Lines */
 
@@ -78,6 +86,8 @@ button {
     margin-bottom: 0.5rem;
     border: none;
     border-radius: 0;
+    width: 50%;
+    text-align: left;
     font-size: 0.9rem;
     font-family: 'pennypacker-semiwide', Helvetica, sans-serif;
     background-color: transparent;
@@ -105,10 +115,7 @@ button:hover .button-icon-box {
 
 #links {
     display: flex;
-}
-
-#links .nav-item {
-    width: 50%;
+    flex-direction: row;
 }
 
 /* CV */
@@ -117,7 +124,13 @@ button:hover .button-icon-box {
     overflow: scroll;
 }
 
+#photo-background {
+    border: 1rem solid var(--blue);
+    background: var(--blue);
+}
+
 #photo-width {
+    margin: 0 auto;
     width: 100%;
     max-width: 300px;
 }
