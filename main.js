@@ -44,7 +44,7 @@ function getNavElements() {
  * Checks arguments for class hidden, removes when found.
  * @param  {...HTMLElement} elements Column elements to be shown.
  */
-function toggleElements(...elements) {
+function toggleOn(...elements) {
     elements.forEach(e => {
         e.classList.toggle('hidden');
     })
@@ -65,7 +65,7 @@ function toggleOff(...elements) {
 /** Adds event listener to welcome block. */
 function welcomeListener() {
     navElements.goButton.addEventListener("click", () => {
-        toggleElements(navElements.main);
+        toggleOn(navElements.main);
         toggleOff(navElements.welcome);
     });
 }
@@ -73,7 +73,7 @@ function welcomeListener() {
 /** Adds event listener to work button */
 function workListener() {
     navElements.workButton.addEventListener('click', () => {
-        toggleElements(navElements.workCol);
+        toggleOn(navElements.workCol);
         toggleOff(navElements.projectsCol, navElements.aboutCol, navElements.CVCol);
     })
 }
@@ -81,7 +81,7 @@ function workListener() {
 /** Adds event listener to projects button */
 function projectsListener() {
     navElements.projectsButton.addEventListener('click', () => {
-        toggleElements(navElements.projectsCol);
+        toggleOn(navElements.projectsCol);
         toggleOff(navElements.workCol, navElements.aboutCol, navElements.CVCol);
     })
 }
@@ -89,7 +89,7 @@ function projectsListener() {
 /** Adds event listener to about me button */
 function aboutListener () {
     navElements.aboutButton.addEventListener('click', () => {
-        toggleElements(navElements.aboutCol, navElements.CVCol);
+        toggleOn(navElements.aboutCol, navElements.CVCol);
         toggleOff(navElements.workCol, navElements.projectsCol);
     })
 }
@@ -109,3 +109,20 @@ function CVListeners() {
         navElements.languagesLine.scrollIntoView(true);
     })
 }
+
+// /** Fixes header height to facilitate layout. Fixes max at window height. */
+//  function heightControl() {
+//     // Get viewport height
+//     const windowHeight = window.innerHeight;
+//     // Reset header height to auto
+//     navElements.header.style.height = auto;
+//     //Get organic header height
+//     const headerRect = navElements.header.getBoundingClientRect();
+//     const autoHeight = headerRect.height;
+//     //Set height to autmoatic height or limit to 100vh
+//     if (autoHeight < windowHeight) {
+//         navElements.header.style.height = autoHeight + 'px';
+//     } else {
+//         navElements.header.height = windowHeight + 'px';
+//     }
+//  }

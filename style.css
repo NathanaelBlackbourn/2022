@@ -50,7 +50,7 @@ header {
 
 .nav-container {
     display: flex;
-    justify-content: right;
+    justify-content: space-between;
     flex-flow: wrap;
     margin: 0 -2.5rem;
 }
@@ -117,6 +117,12 @@ button:hover .button-icon-box {
 }
 
 /* CV */
+
+#cv-nav {
+    position: sticky;
+    top: 0;
+    background: var(--black);
+}
 
 #photo-background {
     border: 1rem solid var(--blue);
