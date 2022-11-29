@@ -46,6 +46,7 @@ header {
     width: 100%;
     background-color: var(--black);
     overflow: scroll;
+    transition: height 0.2s ease;
 }
 
 .nav-container {
@@ -56,7 +57,8 @@ header {
 }
 
 .nav-column {
-    padding: 1rem 2.5rem;
+    margin: 1rem 0;
+    padding: 0 2.5rem;
 }
 
 .nav-item {
@@ -118,7 +120,7 @@ button:hover .button-icon-box {
 
 /* CV */
 
-#cv-nav {
+#cv-scroll-nav {
     position: sticky;
     top: 0;
     background: var(--black);

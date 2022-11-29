@@ -28,6 +28,8 @@ function getNavElements() {
     navElements.workButton = document.getElementById('work-button');
     navElements.projectsButton = document.getElementById('projects-button');
     navElements.aboutButton = document.getElementById('about-me-button');
+    // CV scroll nav
+    navElements.CVScrollNav = document.getElementById('cv-scroll-nav');
     // CV scroll buttons
     navElements.skillsButton = document.getElementById('skills-button');
     navElements.educationButton = document.getElementById('education-button');
@@ -65,64 +67,90 @@ function toggleOff(...elements) {
 /** Adds event listener to welcome block. */
 function welcomeListener() {
     navElements.goButton.addEventListener("click", () => {
+        resetHeight();
         toggleOn(navElements.main);
         toggleOff(navElements.welcome);
+        heightControl();
     });
 }
 
 /** Adds event listener to work button */
 function workListener() {
     navElements.workButton.addEventListener('click', () => {
+        resetHeight();
         toggleOn(navElements.workCol);
         toggleOff(navElements.projectsCol, navElements.aboutCol, navElements.CVCol);
+        heightControl();
     })
 }
 
 /** Adds event listener to projects button */
 function projectsListener() {
     navElements.projectsButton.addEventListener('click', () => {
+        resetHeight();
         toggleOn(navElements.projectsCol);
         toggleOff(navElements.workCol, navElements.aboutCol, navElements.CVCol);
+        heightControl();
     })
 }
 
 /** Adds event listener to about me button */
 function aboutListener () {
     navElements.aboutButton.addEventListener('click', () => {
+        resetHeight();
         toggleOn(navElements.aboutCol, navElements.CVCol);
         toggleOff(navElements.workCol, navElements.projectsCol);
+        heightControl();
     })
 }
 
 /** CV nav buttons scroll to place */
 function CVListeners() {
     navElements.skillsButton.addEventListener('click', () => {
-        navElements.skillsLine.scrollIntoView(true);
+        CVScroll(navElements.skillsLine);
     })
     navElements.educationButton.addEventListener('click', () => {
-        navElements.educationLine.scrollIntoView(true);
+        CVScroll(navElements.educationLine);
     })
     navElements.experienceButton.addEventListener('click', () => {
-        navElements.experienceLine.scrollIntoView(true);
+        CVScroll(navElements.experienceLine);
     })
     navElements.languagesButton.addEventListener('click', () => {
-        navElements.languagesLine.scrollIntoView(true);
+        CVScroll(navElements.languagesLine);
     })
 }
 
-// /** Fixes header height to facilitate layout. Fixes max at window height. */
-//  function heightControl() {
-//     // Get viewport height
-//     const windowHeight = window.innerHeight;
-//     // Reset header height to auto
-//     navElements.header.style.height = auto;
-//     //Get organic header height
-//     const headerRect = navElements.header.getBoundingClientRect();
-//     const autoHeight = headerRect.height;
-//     //Set height to autmoatic height or limit to 100vh
-//     if (autoHeight < windowHeight) {
-//         navElements.header.style.height = autoHeight + 'px';
-//     } else {
-//         navElements.header.height = windowHeight + 'px';
-//     }
-//  }
+/**
+ * Scrolls down CV column to chosen element. Offset for sticky nav height.
+ * @param {HTMLElement} element The element the function will scroll to.
+*/
+function CVScroll(element) {
+    let colRect = navElements.CVCol.getBoundingClientRect();
+    let itemRect = element.getBoundingClientRect();
+    let CVNavRect = navElements.CVScrollNav.getBoundingClientRect();
+    navElements.CVCol.scrollTo({
+        top: itemRect.top - colRect.top - CVNavRect.height,
+        left: 0,
+        behavior: 'smooth'
+    })
+}
+
+function resetHeight() {
+    // Reset header height to auto
+    navElements.header.style.height = 'auto';
+}
+
+/** Fixes header height to facilitate layout. Fixes max at window height. */
+ function heightControl() {
+    // Get viewport height
+    const windowHeight = window.innerHeight;
+    //Get organic header height
+    const headerRect = navElements.header.getBoundingClientRect();
+    const autoHeight = headerRect.height;
+    //Set height to autmoatic height or limit to 100vh
+    if (autoHeight < windowHeight) {
+        navElements.header.style.height = autoHeight + 'px';
+    } else {
+        navElements.header.style.height = windowHeight + 'px';
+    }
+ }
