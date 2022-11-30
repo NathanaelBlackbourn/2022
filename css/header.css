@@ -46,7 +46,7 @@ header {
     width: 100%;
     background-color: var(--black);
     overflow: scroll;
-    transition: height 0.2s ease;
+    transition: top 0.3s ease-in-out;
 }
 
 .nav-container {
