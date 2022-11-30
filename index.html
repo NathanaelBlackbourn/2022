@@ -5,17 +5,19 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://use.typekit.net/khp0gjo.css">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="style.mdm.css">
-    <link rel="stylesheet" href="style.lrg.css">
-    <script src="main.js"></script>
+    <link rel="stylesheet" href="css/frame.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/style.mdm.css">
+    <link rel="stylesheet" href="css/style.lrg.css">
+    <script src="js/frame.js"></script>
+    <script src="js/main.js"></script>
     <title>Sublime Systems</title>
 </head>
 <body>
     <header>
         <div class="nav-container" id="title-block">
             <div class="nav-column">
-                <h1 class="header-h1">SUBLIME SYSTEMS</h1>   
+                <h1 class="header-h1">SUBLIME SYSTEMS</h1>
             </div>
             <div class="nav-column" id="email">
                 <div class="nav-item">
@@ -24,8 +26,8 @@
             </div>
             <div class="nav-column">
                 <div class="nav-item" id="links">
-                    <button class="top-aligned"><span class="button-icon-box">></span><a href="https://github.com/NathanaelBlackbourn">github</a></button>
-                    <button class="top-aligned"><span class="button-icon-box">></span><a href="https://www.linkedin.com/in/nathanael-blackbourn-18a4811bb/">linkedin</a></button>
+                    <button class="top-aligned half-width"><span class="button-icon-box">></span><a href="https://github.com/NathanaelBlackbourn">github</a></button>
+                    <button class="top-aligned half-width"><span class="button-icon-box">></span><a href="https://www.linkedin.com/in/nathanael-blackbourn-18a4811bb/">linkedin</a></button>
                 </div>
             </div>
         </div>
@@ -46,26 +48,25 @@
             </div>
             <div class="nav-column hidden" id="nav-main">
                 <div class="nav-item nav-menu-block">
-                    <button class="top-aligned" id="projects-button"><span class="button-icon-box">></span>PROJECTS</button>
-                    <button class="top-aligned" id="work-button"><span class="button-icon-box">></span>WORK</button>
-                    <button class="top-aligned" id="about-me-button"><span class="button-icon-box">></span>ABOUT ME</button>
+                    <button class="top-aligned half-width" id="projects-button"><span class="button-icon-box">></span>PROJECTS</button>
+                    <button class="top-aligned half-width" id="work-button"><span class="button-icon-box">></span>WORK</button>
+                    <button class="top-aligned half-width" id="about-me-button"><span class="button-icon-box">></span>ABOUT ME</button>
                 </div>
             </div>
             <div class="nav-column hidden"  id="projects-col">
-                <nav class="sub-menu hidden">
-                    <div class="menu-item">
-                        <h2 class="menu-item-title">project title here</h2>
-                        <p class="menu-item-description"></p>
+                <div class="nav-item">
+                    <div class="flex-row">
+                        <h2>ÅTERSKAPA EN HEMSIDA</h2>
+                        <button id="recreate-button">launch</button>
                     </div>
-                </nav>
+                    <p>The first submission on my course at Medieinstitutet. Made in collaboration with Edvin Djulic.</p>
+                </div>
             </div>
             <div class="nav-column hidden"  id="work-col">
-                <nav class="sub-menu hidden">
-                    <div class="nav-item">
-                        <h1 class="menu-item-title">work title here</h1>
-                        <p class="menu-item-description"></p>
-                    </div>
-                </nav>
+                <div class="nav-item">
+                    <h1 class="menu-item-title">work title here</h1>
+                    <p class="menu-item-description"></p>
+                </div>
             </div>
             <div class="nav-column about-col hidden" id="about-col">
                 <div class="nav-item">
@@ -109,7 +110,7 @@
                 <div class="nav-item">
                     <h2 id="education-header">EDUCATION</h2>
                     <div class="cv-block">
-                        <div class="cv-flex-row">
+                        <div class="flex-row">
                             <div class="date"><span class="month">sep</span><span class="year">'22</span></div>
                             <span>></span>
                             <div class="date"><span class="month">may</span><span class="year">'24</span></div>
@@ -118,7 +119,7 @@
                         <h2>Medieinstitutet</h2>
                         <p>An in-depth vocational course designed to turn us into fully competent front end developers.</p>
                     </div><div class="cv-block">
-                        <div class="cv-flex-row">
+                        <div class="flex-row">
                             <div class="date"><span class="month">sep</span><span class="year">'11</span></div>
                             <span>></span>
                             <div class="date"><span class="month">jul</span><span class="year">'14</span></div>
@@ -132,7 +133,7 @@
                 <div class="nav-item">
                     <h2 id="experience-header">EXPERIENCE</h2>
                     <div class="cv-block">
-                        <div class="cv-flex-row">
+                        <div class="flex-row">
                             <div class="date"><span class="month">jun</span><span class="year">'22</span></div>
                             <span>></span>
                             <div class="date"><span class="month">now</span></div>
@@ -141,7 +142,7 @@
                         <h2>Stigbergets Shangri-La</h2>
                         <p>As a shift manager I am responsible for the restaurant in the absence of the manager. I need to be able to handle problems that arise, manage time and manage people. Customers and staff alike. Working for Stigbergets I have the opportunity to learn a lot about craft beer and I make the most of it. I work part time now.</p>
                     </div><div class="cv-block">
-                        <div class="cv-flex-row">
+                        <div class="flex-row">
                             <div class="date"><span class="month">mar</span><span class="year">'21</span></div>
                             <span>></span>
                             <div class="date"><span class="month">may</span><span class="year">'22</span></div>
@@ -151,7 +152,7 @@
                         <p>As a visual merchandiser at Uniqlo I was responsible for how the shop looks. This consisted mostly of styling mannequins, making weekly plans for the layout of the store and rolling out the brand’s visual campaigns. The Gothenburg department is a team of three and we were each responsible for managing our time and seeing through our daily tasks.</p>
                     </div>
                     <div class="cv-block">
-                        <div class="cv-flex-row">
+                        <div class="flex-row">
                             <div class="date"><span class="month">sep</span><span class="year">'16</span></div>
                             <span>></span>
                             <div class="date"><span class="month">aug</span><span class="year">'20</span></div>
@@ -162,20 +163,20 @@
                     </div>
                 </div>
                 <div class="line"></div>
-                <div class="nav-item">
-                    <h2 id="languages-header">SPOKEN LANGUAGES</h2>
-                    <div class="cv-block" id="languages-block">
-                        <div class="cv-flex-row">
+                <div class="nav-item" id="languages-block">
+                    <h2>SPOKEN LANGUAGES</h2>
+                    <div class="cv-block">
+                        <div class="flex-row">
                             <h2>ENGLISH</h2>
                             <span>:</span>
                             <h2>native</h2>
                         </div>
-                        <div class="cv-flex-row">
+                        <div class="flex-row">
                             <h2>SWEDISH</h2>
                             <span>:</span>
                             <h2>fluent</h2>
                         </div>
-                        <div class="cv-flex-row">
+                        <div class="flex-row">
                             <h2>SPANISH</h2>
                             <span>:</span>
                             <h2>fluent</h2>
@@ -184,16 +185,16 @@
                 </div>
                 <div class="nav-item nav-menu-block" id="cv-scroll-nav">
                     <h2 class="full-width">see:</h2>
-                    <button class="bottom-aligned" id="skills-button"><span class="button-icon-box">></span>SKILLS</button>
-                    <button class="bottom-aligned" id="education-button"><span class="button-icon-box">></span>EDUCATION</button>
-                    <button class="bottom-aligned" id="experience-button"><span class="button-icon-box">></span>EXPERIENCE</button>
-                    <button class="bottom-aligned" id="languages-button"><span class="button-icon-box">></span>LANGUAGES</button>
+                    <button class="bottom-aligned half-width" id="skills-button"><span class="button-icon-box">></span>SKILLS</button>
+                    <button class="bottom-aligned half-width" id="education-button"><span class="button-icon-box">></span>EDUCATION</button>
+                    <button class="bottom-aligned half-width" id="experience-button"><span class="button-icon-box">></span>EXPERIENCE</button>
+                    <button class="bottom-aligned half-width" id="languages-button"><span class="button-icon-box">></span>LANGUAGES</button>
                 </div>
             </div>
         </div>
         <div class="line"></div>
     </header>
-    <main>
+    <main id="frame">
     </main>
 </body>
 </html>
