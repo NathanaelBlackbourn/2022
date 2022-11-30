@@ -36,10 +36,10 @@ function getNavElements() {
     navElements.experienceButton = document.getElementById('experience-button');
     navElements.languagesButton = document.getElementById('languages-button');
     // CV scroll button targets
-    navElements.skillsLine = document.getElementById('skills-line');
-    navElements.educationLine = document.getElementById('education-line');
-    navElements.experienceLine = document.getElementById('experience-line');
-    navElements.languagesLine = document.getElementById('languages-line');
+    navElements.skillsHeader = document.getElementById('skills-header');
+    navElements.educationHeader = document.getElementById('education-header');
+    navElements.experienceHeader = document.getElementById('experience-header');
+    navElements.languagesHeader = document.getElementById('languages-header');
 }
 
 /**
@@ -107,31 +107,16 @@ function aboutListener () {
 /** CV nav buttons scroll to place */
 function CVListeners() {
     navElements.skillsButton.addEventListener('click', () => {
-        CVScroll(navElements.skillsLine);
+        navElements.skillsHeader.scrollIntoView({behavior: 'smooth', top: 0});
     })
     navElements.educationButton.addEventListener('click', () => {
-        CVScroll(navElements.educationLine);
+        navElements.educationHeader.scrollIntoView({behavior: 'smooth', top: 0});
     })
     navElements.experienceButton.addEventListener('click', () => {
-        CVScroll(navElements.experienceLine);
+        navElements.experienceHeader.scrollIntoView({behavior: 'smooth', top: 0});
     })
     navElements.languagesButton.addEventListener('click', () => {
-        CVScroll(navElements.languagesLine);
-    })
-}
-
-/**
- * Scrolls down CV column to chosen element. Offset for sticky nav height.
- * @param {HTMLElement} element The element the function will scroll to.
-*/
-function CVScroll(element) {
-    let colRect = navElements.CVCol.getBoundingClientRect();
-    let itemRect = element.getBoundingClientRect();
-    let CVNavRect = navElements.CVScrollNav.getBoundingClientRect();
-    navElements.CVCol.scrollTo({
-        top: itemRect.top - colRect.top - CVNavRect.height,
-        left: 0,
-        behavior: 'smooth'
+        navElements.languagesHeader.scrollIntoView({behavior: 'smooth', top: 0});
     })
 }
 
