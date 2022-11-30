@@ -10,7 +10,8 @@
     <link rel="stylesheet" href="css/style.mdm.css">
     <link rel="stylesheet" href="css/style.lrg.css">
     <script src="js/main.js"></script>
-    <script src="js/frame.js"></script>
+    <script src="js/navigation.js"></script>
+    <script src="js/header-dynamics.js"></script>
     <title>Sublime Systems</title>
 </head>
 <body>
@@ -26,31 +27,25 @@
             </div>
             <div class="nav-column">
                 <div class="nav-item" id="links">
-                    <button class="top-aligned half-width"><span class="button-icon-box">></span><a href="https://github.com/NathanaelBlackbourn">github</a></button>
-                    <button class="top-aligned half-width"><span class="button-icon-box">></span><a href="https://www.linkedin.com/in/nathanael-blackbourn-18a4811bb/">linkedin</a></button>
+                    <button class="top-aligned half-width"><a href="https://github.com/NathanaelBlackbourn">github</a></button>
+                    <button class="top-aligned half-width"><a href="https://www.linkedin.com/in/nathanael-blackbourn-18a4811bb/">linkedin</a></button>
                 </div>
             </div>
         </div>
-        <div class="line"></div>        
+        <div class="line full-width"></div>        
         <div class="nav-container" id="nav-block">
             <div class="nav-column" id="welcome">
                 <div class="nav-item">
                     <p>My name is Nathanael Blackbourn, I am a front end developer based in Gothenburg. I use this space as a sandbox for personal projects and to display work done on my course at Medieinstitutet finishing May 2024. I gave it the name Sublime Systems as a guide to remind me to aim for the sublime in my work. Please have a look around.</p>
                 </div>
                 <div class="nav-item" id="go">
-                    <button>
-                        <span class="button-icon-box">
-                            >
-                        </span>
-                        CONTINUE
-                    </button>
+                    <button>CONTINUE</button>
                 </div>
             </div>
             <div class="nav-column hidden" id="nav-main">
                 <div class="nav-item nav-menu-block">
-                    <button class="top-aligned half-width" id="projects-button"><span class="button-icon-box">></span>PROJECTS</button>
-                    <button class="top-aligned half-width" id="work-button"><span class="button-icon-box">></span>WORK</button>
-                    <button class="top-aligned half-width" id="about-me-button"><span class="button-icon-box">></span>ABOUT ME</button>
+                    <button class="top-aligned half-width" id="projects-button">PROJECTS</button>
+                    <button class="top-aligned half-width" id="about-me-button">ABOUT ME</button>
                 </div>
             </div>
             <div class="nav-column hidden"  id="projects-col">
@@ -106,7 +101,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="line"></div>
+                <div class="line full-width"></div>
                 <div class="nav-item">
                     <h2 id="education-header">EDUCATION</h2>
                     <div class="cv-block">
@@ -129,7 +124,7 @@
                         <p>A degree highly focused on design process and conceptual thinking. At Falmouth I learned about typography, layout, printing techniques, web design, experience design, project management and much more. The pinnacle of my studies was collaborating on the design and production of all visual material for the final year fashion show in 2014.</p>
                     </div>
                 </div>
-                <div class="line"></div>
+                <div class="line full-width"></div>
                 <div class="nav-item">
                     <h2 id="experience-header">EXPERIENCE</h2>
                     <div class="cv-block">
@@ -162,7 +157,7 @@
                         <p>Bitter is a modern classical cocktail bar in the central neighbourhood Sant Antoni of Barcelona. I made a lot of drinks here and I ran the place alone Sunday to Tuesday.</p>
                     </div>
                 </div>
-                <div class="line"></div>
+                <div class="line full-width"></div>
                 <div class="nav-item" id="languages-block">
                     <h2>SPOKEN LANGUAGES</h2>
                     <div class="cv-block">
@@ -185,14 +180,19 @@
                 </div>
                 <div class="nav-item nav-menu-block" id="cv-scroll-nav">
                     <h2 class="full-width">see:</h2>
-                    <button class="bottom-aligned half-width" id="skills-button"><span class="button-icon-box">></span>SKILLS</button>
-                    <button class="bottom-aligned half-width" id="education-button"><span class="button-icon-box">></span>EDUCATION</button>
-                    <button class="bottom-aligned half-width" id="experience-button"><span class="button-icon-box">></span>EXPERIENCE</button>
-                    <button class="bottom-aligned half-width" id="languages-button"><span class="button-icon-box">></span>LANGUAGES</button>
+                    <button class="bottom-aligned half-width" id="skills-button">SKILLS</button>
+                    <button class="bottom-aligned half-width" id="education-button">EDUCATION</button>
+                    <button class="bottom-aligned half-width" id="experience-button">EXPERIENCE</button>
+                    <button class="bottom-aligned half-width" id="languages-button">LANGUAGES</button>
                 </div>
             </div>
         </div>
-        <div class="line"></div>
+        <div class="flex" id="header-footer">
+            <div class="line flex-one"></div>
+            <div class="button-wrapper">
+                <button id="clopen"><p>close</p><p class="hidden">open</p></button>
+            </div>
+        </div>
     </header>
     <iframe src="" frameborder="0" id="frame"></iframe>
 </body>

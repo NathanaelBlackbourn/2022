@@ -76,6 +76,14 @@ header {
     margin: 1rem 0;
 }
 
+#header-footer {
+    display: flex;
+    gap: 1rem;
+    align-items: baseline;
+}
+
+/* Reusable classes */
+
 .full-width {
     width: 100%;
 }
@@ -84,11 +92,15 @@ header {
     width: 50%;
 }
 
+.flex-one {
+    flex: 1;
+}
+
+
 /* Lines */
 
 .line {
     margin: 3rem 0 1rem 0;
-    width: 100%;
     border-bottom: 2px dotted var(--blue);
 }
 
@@ -111,18 +123,6 @@ button {
 
 .bottom-aligned {
     margin-top: 0.5rem;
-}
-
-.button-icon-box {
-    width: 0;
-    overflow: hidden;
-    display: inline-block;
-    vertical-align: text-bottom;
-    transition: width 300ms ease;
-}
-
-button:hover .button-icon-box {
-    width: 20px;
 }
 
 .active {
