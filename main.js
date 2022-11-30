@@ -39,7 +39,6 @@ function getNavElements() {
     navElements.skillsHeader = document.getElementById('skills-header');
     navElements.educationHeader = document.getElementById('education-header');
     navElements.experienceHeader = document.getElementById('experience-header');
-    navElements.languagesHeader = document.getElementById('languages-header');
 }
 
 /**
@@ -107,16 +106,16 @@ function aboutListener () {
 /** CV nav buttons scroll to place */
 function CVListeners() {
     navElements.skillsButton.addEventListener('click', () => {
-        navElements.skillsHeader.scrollIntoView({behavior: 'smooth', top: 0});
+        navElements.skillsHeader.scrollIntoView({behavior: 'smooth', block: 'start'});
     })
     navElements.educationButton.addEventListener('click', () => {
-        navElements.educationHeader.scrollIntoView({behavior: 'smooth', top: 0});
+        navElements.educationHeader.scrollIntoView({behavior: 'smooth', block: 'start'});
     })
     navElements.experienceButton.addEventListener('click', () => {
-        navElements.experienceHeader.scrollIntoView({behavior: 'smooth', top: 0});
+        navElements.experienceHeader.scrollIntoView({behavior: 'smooth', block: 'start'});
     })
     navElements.languagesButton.addEventListener('click', () => {
-        navElements.languagesHeader.scrollIntoView({behavior: 'smooth', top: 0});
+        navElements.CVCol.scroll({top: navElements.CVCol.scrollHeight, behavior: 'smooth'})
     })
 }
 

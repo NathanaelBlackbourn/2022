@@ -53,22 +53,25 @@ header {
     display: flex;
     justify-content: space-between;
     flex-flow: wrap;
-    margin: 0 -2.5rem;
+    margin: 1rem -2.5rem 0 -2.5rem;
 }
 
 .nav-column {
-    margin: 1rem 0;
     padding: 0 2.5rem;
 }
 
 .nav-item {
     text-align: left;
-    margin-bottom: 1rem;
+   margin-bottom: 1rem;
 }
 
 .nav-menu-block {
     display: flex;
     flex-wrap: wrap;
+}
+
+.full-width {
+    width: 100%;
 }
 
 /* Lines */
@@ -83,7 +86,6 @@ header {
 
 button {
     display: block;
-    margin-bottom: 0.5rem;
     border: none;
     border-radius: 0;
     width: 50%;
@@ -92,6 +94,14 @@ button {
     font-family: 'pennypacker-semiwide', Helvetica, sans-serif;
     background-color: transparent;
     cursor: pointer;
+}
+
+.top-aligned {
+    margin-bottom: 0.5rem;
+}
+
+.bottom-aligned {
+    margin-top: 0.5rem;
 }
 
 .button-icon-box {
@@ -123,7 +133,7 @@ button:hover .button-icon-box {
 #cv-scroll-nav {
     position: sticky;
     bottom: 0;
-    margin: 1rem 0 0 0;
+    margin: 0;
     background: var(--black);
 }
 
