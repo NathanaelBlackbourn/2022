@@ -1,13 +1,11 @@
-window.addEventListener('DOMContentLoaded', runFrame());
+window.addEventListener('DOMContentLoaded', projectButtonListeners);
 
-/** This objects holds HTML elements in the work-frame section of the site */
-const frameElements = {};
+// Project loading functionality
 
-function runFrame() {
-    getFrameElements();
-}
-
-function getFrameElements() {
-    // Work frame itself
-    frameElements.frame = document.getElementById('frame');
-}
+/** Adds openWork function as a listener to each project button. */
+function projectButtonListeners() {
+    const frame = document.getElementById('frame');
+    navElements.recreateButton.addEventListener('click', () => {
+        frame.src = 'work/aterskapa-en-hemsida/index.html';
+    })
+ }

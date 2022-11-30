@@ -143,11 +143,3 @@ function resetHeight() {
         navElements.header.style.height = windowHeight + 'px';
     }
  }
-
- // Project loading functionality
-
- function projectButtonListeners() {
-    navElements.recreateButton.addEventListener('click', () => {
-        frameElements.frame.innerHTML='<object type="text/html" data="work/aterskapa-en-hemsida/index.html"></object>'
-    })
- }
