@@ -1,7 +1,0 @@
-#frame {
-    width: 100%;
-    height: calc(100vh - 35px);
-    margin-top: 35px;
-    border: none;
-    overflow: scroll;
-}
