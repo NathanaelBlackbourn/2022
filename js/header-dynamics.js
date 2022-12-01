@@ -48,7 +48,5 @@ function resetHeight() {
     //Set height to autmoatic height or limit to 100vh
     if (autoHeight < windowHeight) {
         DOMElements.header.style.height = autoHeight + 'px';
-    } else {
-        DOMElements.header.style.height = windowHeight + 'px';
-    }
+    } else {}
  }

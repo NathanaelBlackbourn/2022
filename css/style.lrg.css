@@ -5,6 +5,7 @@
     header {
         display: flex;
         flex-direction: column;
+        overflow: hidden;
     }
 
     #nav-block {
@@ -14,6 +15,7 @@
 
     .nav-column {
         width: 33.333%;
+        margin-bottom: 0;
         height: 100%;
         overflow: scroll;
     }

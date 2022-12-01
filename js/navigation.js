@@ -19,7 +19,6 @@ function getNavElements() {
     // Columns to toggle
     DOMElements.welcome = document.getElementById('welcome');
     DOMElements.main = document.getElementById('nav-main');
-    DOMElements.workCol = document.getElementById('work-col');
     DOMElements.projectsCol = document.getElementById('projects-col');
     DOMElements.aboutCol = document.getElementById('about-col');
     DOMElements.CVCol = document.getElementById('cv-col');
@@ -28,8 +27,6 @@ function getNavElements() {
     DOMElements.workButton = document.getElementById('work-button');
     DOMElements.projectsButton = document.getElementById('projects-button');
     DOMElements.aboutButton = document.getElementById('about-me-button');
-    // Buttons that load projects
-    DOMElements.recreateButton = document.getElementById('recreate-button');  
 }
 
 /**
@@ -70,7 +67,7 @@ function projectsListener() {
     DOMElements.projectsButton.addEventListener('click', () => {
         resetHeight();
         toggleOn(DOMElements.projectsCol);
-        toggleOff(DOMElements.workCol, DOMElements.aboutCol, DOMElements.CVCol);
+        toggleOff(DOMElements.aboutCol, DOMElements.CVCol);
         heightControl();
     })
 }
@@ -80,7 +77,7 @@ function aboutListener () {
     DOMElements.aboutButton.addEventListener('click', () => {
         resetHeight();
         toggleOn(DOMElements.aboutCol, DOMElements.CVCol);
-        toggleOff(DOMElements.workCol, DOMElements.projectsCol);
+        toggleOff(DOMElements.projectsCol);
         heightControl();
     })
 }
@@ -112,14 +109,23 @@ function CVListeners() {
     })
     DOMElements.languagesButton.addEventListener('click', () => {
         const colRect = DOMElements.CVCol.getBoundingClientRect();
-        DOMElements.CVCol.scroll({top: DOMElements.CVCol.scrollHeight - colRect.height, behavior: 'smooth'})
+        DOMElements.CVCol.scroll({top: DOMElements.CVCol.scrollHeight, behavior: 'smooth'})
     })
 }
  
  /** Adds openWork function as a listener to each project button. */
 function projectButtonListeners() {
     DOMElements.frame = document.getElementById('frame');
-    DOMElements.recreateButton.addEventListener('click', () => {
+    document.getElementById('recreate-button').addEventListener('click', () => {
         DOMElements.frame.src = 'work/aterskapa-en-hemsida/index.html';
+        clopenHeader();
+    })
+    document.getElementById('modernise-button').addEventListener('click', () => {
+        DOMElements.frame.src = 'work/modernisera-en-hemsida/index.html';
+        clopenHeader();
+    })
+    document.getElementById('game-button').addEventListener('click', () => {
+        DOMElements.frame.src = 'work/textbaserat-spel/index.html';
+        clopenHeader();
     })
  }
