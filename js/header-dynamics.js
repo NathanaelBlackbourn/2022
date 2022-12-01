@@ -18,7 +18,7 @@ function addClopenListeners() {
 function clopenHeader() {
     const headerHeight = getHeaderHeight();
     if (headerOpen) {
-        DOMElements.header.style.top = '-' + (headerHeight - 50) + 'px';
+        DOMElements.header.style.top = '-' + (headerHeight - 35) + 'px';
         headerOpen = false;
         DOMElements.clopen.innerText = 'open';
     } else {
@@ -48,5 +48,7 @@ function resetHeight() {
     //Set height to autmoatic height or limit to 100vh
     if (autoHeight < windowHeight) {
         DOMElements.header.style.height = autoHeight + 'px';
-    } else {}
+    } else {
+        DOMElements.header.style.height = windowHeight + 'px';
+    }
  }

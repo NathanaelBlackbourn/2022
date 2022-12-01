@@ -1,205 +1,328 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://use.typekit.net/khp0gjo.css">
-    <link rel="stylesheet" href="css/frame.css">
-    <link rel="stylesheet" href="css/header.css">
-    <link rel="stylesheet" href="css/style.mdm.css">
-    <link rel="stylesheet" href="css/style.lrg.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://use.typekit.net/khp0gjo.css" />
+    <link rel="stylesheet" href="css/frame.css" />
+    <link rel="stylesheet" href="css/header.css" />
+    <link rel="stylesheet" href="css/style.mdm.css" />
+    <link rel="stylesheet" href="css/style.lrg.css" />
     <script src="js/main.js"></script>
     <script src="js/navigation.js"></script>
     <script src="js/header-dynamics.js"></script>
     <title>Sublime Systems</title>
-</head>
-<body>
+  </head>
+  <body>
     <header>
-        <div class="nav-container" id="title-block">
-            <div class="nav-column">
-                <h1 class="header-h1">SUBLIME SYSTEMS</h1>
-            </div>
-            <div class="nav-column" id="email">
-                <div class="nav-item">
-                    <p>nathanaelblackbourn@gmail.com</p>
-                </div>
-            </div>
-            <div class="nav-column">
-                <div class="nav-item" id="links">
-                    <button class="top-aligned half-width"><a href="https://github.com/NathanaelBlackbourn">github</a></button>
-                    <button class="top-aligned half-width"><a href="https://www.linkedin.com/in/nathanael-blackbourn-18a4811bb/">linkedin</a></button>
+      <div class="nav-container" id="title-block">
+        <div class="nav-column">
+          <h1 class="header-h1">SUBLIME SYSTEMS</h1>
+        </div>
+        <div class="nav-column">
+            <div class="nav-item" id="contact-block">
+                <div id="contact-frame">
+                    <div id="contact">
+                        <div id="icon-wrapper">
+                        <svg
+                            version="1.1"
+                            id="Layer_1"
+                            xmlns="http://www.w3.org/2000/svg"
+                            xmlns:xlink="http://www.w3.org/1999/xlink"
+                            x="0px"
+                            y="0px"
+                            viewBox="0 0 100 100"
+                            style="enable-background: new 0 0 100 100"
+                            xml:space="preserve"
+                        >
+                            <circle class="st0" cx="50.42" cy="49.96" r="50.04" />
+                            <ellipse
+                            class="st0"
+                            cx="50.4"
+                            cy="50.35"
+                            rx="8.22"
+                            ry="46.75"
+                            />
+                            <ellipse
+                            class="st0"
+                            cx="50.4"
+                            cy="50.35"
+                            rx="30.39"
+                            ry="46.75"
+                            />
+                            <ellipse
+                            class="st0"
+                            cx="50.42"
+                            cy="49.92"
+                            rx="46.75"
+                            ry="8.22"
+                            />
+                        </svg>
+                        </div>
+                        <button class="top-aligned">
+                        <a href="https://github.com/NathanaelBlackbourn">github</a>
+                        </button>
+                        <button class="top-aligned">
+                        <a href="https://www.linkedin.com/in/nathanael-blackbourn-18a4811bb/">linkedin</a></button>
+                        <p>nathanaelblackbourn<br>@gmail.com</p>
+                    </div>
                 </div>
             </div>
         </div>
-        <div class="line full-width"></div>        
-        <div class="nav-container" id="nav-block">
-            <div class="nav-column" id="welcome">
-                <div class="nav-item">
-                    <p>My name is Nathanael Blackbourn, I am a front end developer based in Gothenburg. I use this space as a sandbox for personal projects and to display work done on my course at Medieinstitutet finishing May 2024. I gave it the name Sublime Systems as a guide to remind me to aim for the sublime in my work. Please have a look around.</p>
-                </div>
-                <div class="nav-item" id="go">
-                    <button>CONTINUE</button>
-                </div>
-            </div>
-            <div class="nav-column hidden" id="nav-main">
-                    <button class="top-aligned" id="projects-button">PROJECTS</button>
-                    <button class="top-aligned" id="about-me-button">ABOUT ME</button>
-            </div>
-            <div class="nav-column hidden"  id="projects-col">
-                <div class="nav-item">
-                    <div class="flex-row">
-                        <h2>RECREATE A WEBSITE</h2>
-                        <button id="recreate-button">launch</button>
-                    </div>
-                    <p>The first submission on my course at Medieinstitutet. We were tasked with choosing a website and recreating it using only HTML and CSS. We chose the Gothenburg Konstmuseum website. Made in collaboration with Edvin Djulic.</p>
-                </div>
-                <div class="nav-item">
-                    <div class="flex-row">
-                        <h2>MODERNISE A WEBSITE</h2>
-                        <button id="modernise-button">launch</button>
-                    </div>
-                    <p>A responsivity focused task at Medieinstitutet. We were tasked with choosing a website with outdated design and updating it to be fully responsive to different sreen sizes. Made in collaboration with Leon Björklund.</p>
-                </div>
-                <div class="nav-item">
-                    <div class="flex-row">
-                        <h2>TEXT-BASED GAME</h2>
-                        <button id="game-button">launch</button>
-                    </div>
-                    <p>The first submission on my course at Medieinstitutet. Made in collaboration with Edvin Djulic.</p>
-                </div>
-            </div>
-            <div class="nav-column about-col hidden" id="about-col">
-                <div class="nav-item">
-                    <div id="photo-background">
-                        <div id="photo-width">
-                            <div id="photo"></div>
-                        </div>
-                    </div>
-                </div>
-                <div class="nav-item about-text">
-                    <p>
-                        British national. I have lived in Sweden for two years now.<br><br>
-                        My interest in frontend development started ten years ago during my degree. Since then I have done various courses and projects and have now decided to make it my career.<br><br>
-                        Front end clicks with me. I like the structure, creativity, the visual involvement. I like to work with the computer, I like to build things, I like the culture of the international developer community, I like that our reach as developers extends as far as our imagination.<br><br>
-                        The office environment will be new for me but I have been in many new environments over the past few years and if there is one thing I have proven it is my ability to adapt and learn.</p>
-                </div>
-            </div>
-            <div class="nav-column hidden" id="cv-col">
-                <div class="nav-item">
-                    <h2 id="skills-header">SKILLS</h2>
-                    <div class="cv-block">
-                        <h2>HTML</h2>
-                        <div class="skill-outline">
-                            <div class="skill-level" id="html-level"></div>
-                        </div>
-                        <h2>CSS</h2>
-                        <div class="skill-outline">
-                            <div class="skill-level" id="css-level"></div>
-                        </div>
-                        <h2>JAVASCRIPT</h2>
-                        <div class="skill-outline">
-                            <div class="skill-level" id="js-level"></div>
-                        </div>
-                        <h2>ADOBE CREATIVE SUITE</h2>
-                        <div class="skill-outline">
-                            <div class="skill-level" id="acs-level"></div>
-                        </div>
-                    </div>
-                </div>
-                <div class="line full-width"></div>
-                <div class="nav-item">
-                    <h2 id="education-header">EDUCATION</h2>
-                    <div class="cv-block">
-                        <div class="flex-row">
-                            <div class="date"><span class="month">sep</span><span class="year">'22</span></div>
-                            <span>></span>
-                            <div class="date"><span class="month">may</span><span class="year">'24</span></div>
-                        </div>
-                        <h2>Front End Developer</h2>
-                        <h2>Medieinstitutet</h2>
-                        <p>An in-depth vocational course designed to turn us into fully competent front end developers.</p>
-                    </div><div class="cv-block">
-                        <div class="flex-row">
-                            <div class="date"><span class="month">sep</span><span class="year">'11</span></div>
-                            <span>></span>
-                            <div class="date"><span class="month">jul</span><span class="year">'14</span></div>
-                        </div>
-                        <h2>Graphic Design Bachelor's Degree</h2>
-                        <h2>Falmouth University</h2>
-                        <p>A degree highly focused on design process and conceptual thinking. At Falmouth I learned about typography, layout, printing techniques, web design, experience design, project management and much more. The pinnacle of my studies was collaborating on the design and production of all visual material for the final year fashion show in 2014.</p>
-                    </div>
-                </div>
-                <div class="line full-width"></div>
-                <div class="nav-item">
-                    <h2 id="experience-header">EXPERIENCE</h2>
-                    <div class="cv-block">
-                        <div class="flex-row">
-                            <div class="date"><span class="month">jun</span><span class="year">'22</span></div>
-                            <span>></span>
-                            <div class="date"><span class="month">now</span></div>
-                        </div>
-                        <h2>Serveringsansvarig [Shift Manager]</h2>
-                        <h2>Stigbergets Shangri-La</h2>
-                        <p>As a shift manager I am responsible for the restaurant in the absence of the manager. I need to be able to handle problems that arise, manage time and manage people. Customers and staff alike. Working for Stigbergets I have the opportunity to learn a lot about craft beer and I make the most of it. I work part time now.</p>
-                    </div><div class="cv-block">
-                        <div class="flex-row">
-                            <div class="date"><span class="month">mar</span><span class="year">'21</span></div>
-                            <span>></span>
-                            <div class="date"><span class="month">may</span><span class="year">'22</span></div>
-                        </div>
-                        <h2>Visual Merchandiser</h2>
-                        <h2>Uniqlo</h2>
-                        <p>As a visual merchandiser at Uniqlo I was responsible for how the shop looks. This consisted mostly of styling mannequins, making weekly plans for the layout of the store and rolling out the brand’s visual campaigns. The Gothenburg department is a team of three and we were each responsible for managing our time and seeing through our daily tasks.</p>
-                    </div>
-                    <div class="cv-block">
-                        <div class="flex-row">
-                            <div class="date"><span class="month">sep</span><span class="year">'16</span></div>
-                            <span>></span>
-                            <div class="date"><span class="month">aug</span><span class="year">'20</span></div>
-                        </div>
-                        <h2>Encargado [Shift Manager]</h2>
-                        <h2>Bitter Cocktail Bar</h2>
-                        <p>Bitter is a modern classical cocktail bar in the central neighbourhood Sant Antoni of Barcelona. I made a lot of drinks here and I ran the place alone Sunday to Tuesday.</p>
-                    </div>
-                </div>
-                <div class="line full-width"></div>
-                <div class="nav-item" id="languages-block">
-                    <h2>SPOKEN LANGUAGES</h2>
-                    <div class="cv-block">
-                        <div class="flex-row">
-                            <h2>ENGLISH</h2>
-                            <span>:</span>
-                            <h2>native</h2>
-                        </div>
-                        <div class="flex-row">
-                            <h2>SWEDISH</h2>
-                            <span>:</span>
-                            <h2>fluent</h2>
-                        </div>
-                        <div class="flex-row">
-                            <h2>SPANISH</h2>
-                            <span>:</span>
-                            <h2>fluent</h2>
-                        </div>
-                    </div>
-                </div>
-                <div class="nav-item nav-menu-block" id="cv-scroll-nav">
-                    <h2 class="full-width">see:</h2>
-                    <button class="bottom-aligned half-width" id="skills-button">SKILLS</button>
-                    <button class="bottom-aligned half-width" id="education-button">EDUCATION</button>
-                    <button class="bottom-aligned half-width" id="experience-button">EXPERIENCE</button>
-                    <button class="bottom-aligned half-width" id="languages-button">LANGUAGES</button>
-                </div>
-            </div>
+      </div>
+      <div class="line full-width"></div>
+      <div class="nav-container" id="nav-block">
+        <div class="nav-column" id="welcome">
+          <div class="nav-item">
+            <p>
+              My name is Nathanael Blackbourn, I am a front end developer based
+              in Gothenburg. I use this space as a sandbox for personal projects
+              and to display work done on my course at Medieinstitutet finishing
+              May 2024. I gave it the name Sublime Systems as a guide to remind
+              me to aim for the sublime in my work. Please have a look around.
+            </p>
+          </div>
+          <div class="nav-item" id="go">
+            <button>CONTINUE</button>
+          </div>
         </div>
-        <div class="flex" id="header-footer">
-            <div class="line flex-one"></div>
-            <div class="button-wrapper">
-                <button id="clopen">close</button>
-            </div>
+        <div class="nav-column hidden" id="nav-main">
+          <button class="top-aligned" id="projects-button">PROJECTS</button>
+          <button class="top-aligned" id="about-me-button">ABOUT ME</button>
         </div>
+        <div class="nav-column hidden" id="projects-col">
+          <div class="nav-item">
+            <div class="flex-row">
+              <h2>RECREATE A WEBSITE</h2>
+              <button id="recreate-button">launch</button>
+            </div>
+            <p>
+              The first submission on my course at Medieinstitutet. We were
+              tasked with choosing a website and recreating it using only HTML
+              and CSS. We chose the Gothenburg Konstmuseum website. Made in
+              collaboration with Edvin Djulic.
+            </p>
+          </div>
+          <div class="nav-item">
+            <div class="flex-row">
+              <h2>MODERNISE A WEBSITE</h2>
+              <button id="modernise-button">launch</button>
+            </div>
+            <p>
+              A responsivity focused task at Medieinstitutet. We were tasked
+              with choosing a website with outdated design and updating it to be
+              fully responsive to different sreen sizes. Made in collaboration
+              with Leon Björklund.
+            </p>
+          </div>
+          <div class="nav-item">
+            <div class="flex-row">
+              <h2>TEXT-BASED GAME</h2>
+              <button id="game-button">launch</button>
+            </div>
+            <p>
+              The first submission on my course at Medieinstitutet. Made in
+              collaboration with Edvin Djulic.
+            </p>
+          </div>
+        </div>
+        <div class="nav-column about-col hidden" id="about-col">
+          <div class="nav-item">
+            <div id="photo-background">
+              <div id="photo-width">
+                <div id="photo"></div>
+              </div>
+            </div>
+          </div>
+          <div class="nav-item about-text">
+            <p>
+              British national. I have lived in Sweden for two years now.<br /><br />
+              My interest in frontend development started ten years ago during
+              my degree. Since then I have done various courses and projects and
+              have now decided to make it my career.<br /><br />
+              Front end clicks with me. I like the structure, creativity, the
+              visual involvement. I like to work with the computer, I like to
+              build things, I like the culture of the international developer
+              community, I like that our reach as developers extends as far as
+              our imagination.<br /><br />
+              The office environment will be new for me but I have been in many
+              new environments over the past few years and if there is one thing
+              I have proven it is my ability to adapt and learn.
+            </p>
+          </div>
+        </div>
+        <div class="nav-column hidden" id="cv-col">
+          <div class="nav-item">
+            <h2 id="skills-header">SKILLS</h2>
+            <div class="cv-block">
+              <h2>HTML</h2>
+              <div class="skill-outline">
+                <div class="skill-level" id="html-level"></div>
+              </div>
+              <h2>CSS</h2>
+              <div class="skill-outline">
+                <div class="skill-level" id="css-level"></div>
+              </div>
+              <h2>JAVASCRIPT</h2>
+              <div class="skill-outline">
+                <div class="skill-level" id="js-level"></div>
+              </div>
+              <h2>ADOBE CREATIVE SUITE</h2>
+              <div class="skill-outline">
+                <div class="skill-level" id="acs-level"></div>
+              </div>
+            </div>
+          </div>
+          <div class="line full-width"></div>
+          <div class="nav-item">
+            <h2 id="education-header">EDUCATION</h2>
+            <div class="cv-block">
+              <div class="flex-row">
+                <div class="date">
+                  <span class="month">sep</span><span class="year">'22</span>
+                </div>
+                <span>></span>
+                <div class="date">
+                  <span class="month">may</span><span class="year">'24</span>
+                </div>
+              </div>
+              <h2>Front End Developer</h2>
+              <h2>Medieinstitutet</h2>
+              <p>
+                An in-depth vocational course designed to turn us into fully
+                competent front end developers.
+              </p>
+            </div>
+            <div class="cv-block">
+              <div class="flex-row">
+                <div class="date">
+                  <span class="month">sep</span><span class="year">'11</span>
+                </div>
+                <span>></span>
+                <div class="date">
+                  <span class="month">jul</span><span class="year">'14</span>
+                </div>
+              </div>
+              <h2>Graphic Design Bachelor's Degree</h2>
+              <h2>Falmouth University</h2>
+              <p>
+                A degree highly focused on design process and conceptual
+                thinking. At Falmouth I learned about typography, layout,
+                printing techniques, web design, experience design, project
+                management and much more. The pinnacle of my studies was
+                collaborating on the design and production of all visual
+                material for the final year fashion show in 2014.
+              </p>
+            </div>
+          </div>
+          <div class="line full-width"></div>
+          <div class="nav-item">
+            <h2 id="experience-header">EXPERIENCE</h2>
+            <div class="cv-block">
+              <div class="flex-row">
+                <div class="date">
+                  <span class="month">jun</span><span class="year">'22</span>
+                </div>
+                <span>></span>
+                <div class="date"><span class="month">now</span></div>
+              </div>
+              <h2>Serveringsansvarig [Shift Manager]</h2>
+              <h2>Stigbergets Shangri-La</h2>
+              <p>
+                As a shift manager I am responsible for the restaurant in the
+                absence of the manager. I need to be able to handle problems
+                that arise, manage time and manage people. Customers and staff
+                alike. Working for Stigbergets I have the opportunity to learn a
+                lot about craft beer and I make the most of it. I work part time
+                now.
+              </p>
+            </div>
+            <div class="cv-block">
+              <div class="flex-row">
+                <div class="date">
+                  <span class="month">mar</span><span class="year">'21</span>
+                </div>
+                <span>></span>
+                <div class="date">
+                  <span class="month">may</span><span class="year">'22</span>
+                </div>
+              </div>
+              <h2>Visual Merchandiser</h2>
+              <h2>Uniqlo</h2>
+              <p>
+                As a visual merchandiser at Uniqlo I was responsible for how the
+                shop looks. This consisted mostly of styling mannequins, making
+                weekly plans for the layout of the store and rolling out the
+                brand’s visual campaigns. The Gothenburg department is a team of
+                three and we were each responsible for managing our time and
+                seeing through our daily tasks.
+              </p>
+            </div>
+            <div class="cv-block">
+              <div class="flex-row">
+                <div class="date">
+                  <span class="month">sep</span><span class="year">'16</span>
+                </div>
+                <span>></span>
+                <div class="date">
+                  <span class="month">aug</span><span class="year">'20</span>
+                </div>
+              </div>
+              <h2>Encargado [Shift Manager]</h2>
+              <h2>Bitter Cocktail Bar</h2>
+              <p>
+                Bitter is a modern classical cocktail bar in the central
+                neighbourhood Sant Antoni of Barcelona. I made a lot of drinks
+                here and I ran the place alone Sunday to Tuesday.
+              </p>
+            </div>
+          </div>
+          <div class="line full-width"></div>
+          <div class="nav-item" id="languages-block">
+            <h2>SPOKEN LANGUAGES</h2>
+            <div class="cv-block">
+              <div class="flex-row">
+                <h2>ENGLISH</h2>
+                <span>:</span>
+                <h2>native</h2>
+              </div>
+              <div class="flex-row">
+                <h2>SWEDISH</h2>
+                <span>:</span>
+                <h2>fluent</h2>
+              </div>
+              <div class="flex-row">
+                <h2>SPANISH</h2>
+                <span>:</span>
+                <h2>fluent</h2>
+              </div>
+            </div>
+          </div>
+          <div class="nav-item nav-menu-block" id="cv-scroll-nav">
+            <h2 class="full-width">see:</h2>
+            <button class="bottom-aligned half-width" id="skills-button">
+              SKILLS
+            </button>
+            <button class="bottom-aligned half-width" id="education-button">
+              EDUCATION
+            </button>
+            <button class="bottom-aligned half-width" id="experience-button">
+              EXPERIENCE
+            </button>
+            <button class="bottom-aligned half-width" id="languages-button">
+              LANGUAGES
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="flex" id="header-footer">
+        <div class="line flex-one"></div>
+        <div class="button-wrapper">
+          <button id="clopen">close</button>
+        </div>
+      </div>
     </header>
     <iframe src="" frameborder="0" id="frame"></iframe>
-</body>
+  </body>
 </html>

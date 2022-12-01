@@ -1,7 +1,32 @@
 @media all and (min-width: 481px) {
 
+    .nav-container {
+        flex-direction: row;
+    }
+
     .nav-column {
         width: 50%;
+    }
+
+    #cv-col {
+        margin-left: auto;
+    }
+
+    /* Contact block */
+
+    #contact-frame {
+        top: 0;
+        bottom: unset;
+    }
+
+    #contact {
+        top: 0;
+        bottom: unset;
+    }
+
+    #icon-wrapper {
+        top: 0;
+        bottom: unset;
     }
 
 }
