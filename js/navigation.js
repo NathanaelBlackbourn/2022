@@ -7,9 +7,6 @@ function runNav() {
     welcomeListener();
     projectsListener();
     aboutListener();
-    // Navigation of CV
-    getCVNavElements();
-    CVListeners();
     // Launching projects
     projectButtonListeners();
 }
@@ -79,37 +76,6 @@ function aboutListener () {
         toggleOn(DOMElements.aboutCol, DOMElements.CVCol);
         toggleOff(DOMElements.projectsCol);
         heightControl();
-    })
-}
-
-/** Gets the DOM elements responsible for navigating CV */
-function getCVNavElements() {
-    // CV scroll buttons
-    DOMElements.skillsButton = document.getElementById('skills-button');
-    DOMElements.educationButton = document.getElementById('education-button');
-    DOMElements.experienceButton = document.getElementById('experience-button');
-    DOMElements.languagesButton = document.getElementById('languages-button');
-    // CV scroll button targets
-    DOMElements.skillsHeader = document.getElementById('skills-header');
-    DOMElements.educationHeader = document.getElementById('education-header');
-    DOMElements.experienceHeader = document.getElementById('experience-header');
-    DOMElements.languagesBlock = document.getElementById('languages-block');
-}
-
-/** CV nav buttons scroll to place */
-function CVListeners() {
-    DOMElements.skillsButton.addEventListener('click', () => {
-        DOMElements.skillsHeader.scrollIntoView({behavior: 'smooth', block: 'start'});
-    })
-    DOMElements.educationButton.addEventListener('click', () => {
-        DOMElements.educationHeader.scrollIntoView({behavior: 'smooth', block: 'start'});
-    })
-    DOMElements.experienceButton.addEventListener('click', () => {
-        DOMElements.experienceHeader.scrollIntoView({behavior: 'smooth', block: 'start'});
-    })
-    DOMElements.languagesButton.addEventListener('click', () => {
-        const colRect = DOMElements.CVCol.getBoundingClientRect();
-        DOMElements.CVCol.scroll({top: DOMElements.CVCol.scrollHeight, behavior: 'smooth'})
     })
 }
  

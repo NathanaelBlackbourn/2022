@@ -167,14 +167,14 @@ button {
     font-family: 'pennypacker-semiwide', Helvetica, sans-serif;
     background-color: transparent;
     cursor: pointer;
-    text-shadow: 0 0 0 0 var(--black);
+    text-shadow: 0 0 0 var(--black);
     transition-property: text-shadow;
     transition-duration: 400ms;
 
 }
 
 button:hover {
-    text-shadow: 5px 5px 5px 5px var(--blue);
+    text-shadow: 0 0 5px var(--blue);
 }
 
 .top-aligned {
@@ -191,15 +191,6 @@ button:hover {
 
 
 /* CV */
-
-#cv-scroll-nav {
-    position: sticky;
-    display: flex;
-    flex-direction: column;
-    bottom: 0;
-    margin: 0;
-    background: var(--black);
-}
 
 #photo-background {
     border: 1rem solid var(--blue);
