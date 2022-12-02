@@ -96,16 +96,23 @@ header {
     display: flex;
     gap: 1rem;
     align-items: baseline;
-    position: sticky;
-    bottom: 0;
     background: var(--black);
 }
+
+
+/* Main menu */
+
+#menu {
+    display: flex;
+    justify-content: space-between;
+}
+
 
 /* Lines */
 
 .line {
     margin: 1rem 0 1rem 0;
-    border-bottom: 2px dotted var(--blue);
+    border-bottom: 1px dotted var(--blue);
 }
 
 
@@ -114,7 +121,7 @@ header {
 button {
     display: block;
     border: none;
-    border-bottom: 2px dotted var(--blue);
+    border-bottom: 1px dotted var(--blue);
     border-radius: 0;
     text-align: left;
     font-size: 0.9rem;

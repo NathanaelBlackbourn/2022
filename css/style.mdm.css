@@ -12,6 +12,10 @@
         margin-left: auto;
     }
 
+    #menu {
+        display: block;
+    }
+
     /* Contact block */
 
     #contact-frame {
