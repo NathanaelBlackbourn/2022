@@ -95,6 +95,9 @@ header {
     display: flex;
     gap: 1rem;
     align-items: baseline;
+    position: sticky;
+    bottom: 0;
+    background: var(--black);
 }
 
 /* Lines */
@@ -109,20 +112,19 @@ header {
 button {
     display: block;
     border: none;
+    border-bottom: 2px dotted var(--blue);
     border-radius: 0;
     text-align: left;
     font-size: 0.9rem;
     font-family: 'pennypacker-semiwide', Helvetica, sans-serif;
     background-color: transparent;
     cursor: pointer;
-    text-shadow: 0 0 0 var(--black);
-    transition-property: text-shadow;
-    transition-duration: 400ms;
-
+    opacity: 1;
+    transition: opacity 200ms ease;
 }
 
 button:hover {
-    text-shadow: 0 0 5px var(--blue);
+    opacity: 0.8;
 }
 
 .top-aligned {
@@ -133,8 +135,8 @@ button:hover {
     margin-top: 0.5rem;
 }
 
-.active {
-    width: 20px;
+#clopen {
+    border-bottom: none;
 }
 
 

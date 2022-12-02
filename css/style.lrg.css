@@ -5,19 +5,17 @@
     header {
         display: flex;
         flex-direction: column;
-        overflow: hidden;
+        overflow: scroll;
     }
 
     #nav-block {
         height: 100%;
-        overflow: hidden;
     }
 
     .nav-column {
         width: 33.333%;
         margin-bottom: 0;
         height: 100%;
-        overflow: scroll;
     }
 
     .about-col {

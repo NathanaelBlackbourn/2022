@@ -51,10 +51,8 @@ function toggleOff(...elements) {
 /** Adds event listener to welcome block. */
 function welcomeListener() {
     DOMElements.goButton.addEventListener("click", () => {
-        resetHeight();
         toggleOn(DOMElements.main);
         toggleOff(DOMElements.welcome);
-        heightControl();
     });
 }
 
@@ -62,20 +60,16 @@ function welcomeListener() {
 function projectsListener() {
 
     DOMElements.projectsButton.addEventListener('click', () => {
-        resetHeight();
         toggleOn(DOMElements.projectsCol);
         toggleOff(DOMElements.aboutCol, DOMElements.CVCol);
-        heightControl();
     })
 }
 
 /** Adds event listener to about me button */
 function aboutListener () {
     DOMElements.aboutButton.addEventListener('click', () => {
-        resetHeight();
         toggleOn(DOMElements.aboutCol, DOMElements.CVCol);
         toggleOff(DOMElements.projectsCol);
-        heightControl();
     })
 }
  
